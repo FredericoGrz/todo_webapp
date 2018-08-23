@@ -2,9 +2,11 @@ const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
+    //Entrance file that webpack start find react files and transforming in html and js file
     entry: './src/index.jsx',
+    //Place where output files 
     output: {
-        path: __dirname + '/plubic',
+        path: __dirname + '/public',
         filename: './app.js'
     },
     devServer: {
